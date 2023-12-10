@@ -1,0 +1,163 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #005580;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #005580;
+    padding: 10px 20px;
+    color: white;
+}
+
+.header-logo {
+    max-width: 100px; /* Adjust based on your preference */
+    height: auto;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .section-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-logo {
+        margin-bottom: 10px;
+    }
+}
+
+
+#main-banner {
+    background: url('banner-background.jpg') no-repeat center center/cover; /* Add your desired background image */
+    color: white;
+    text-align: center;
+    padding: 60px 20px; /* Adjust padding for better spacing */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#main-banner h2 {
+    font-size: 2.5rem; /* Larger font size for the headline */
+    margin-bottom: 15px;
+}
+
+#main-banner p {
+    font-size: 1.2rem; /* Larger font size for the description */
+}
+
+
+.info-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px); /* Creates a blur effect behind the section */
+    border: 1px solid rgba(0, 85, 128, 0.2); /* Subtle border for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.info-section:hover {
+    transform: scale(1.02); /* Slightly scale up on hover for an interactive feel */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.responsive-img {
+    max-width: 10%; /* Adjust the width to your preference */
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    margin-top: 0;
+    color: #005580;
+}
+
+footer {
+    background-color: #005580;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+    }
+    .text-content, .responsive-img {
+        width: 100%;
+    }
+}
+
+/* Existing CSS styles */
+
+.background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Rest of your CSS styles */
